@@ -1,14 +1,13 @@
-
 const productos = [
     {nombre: "buzo de nezuko", precio: 5800},
-    {nombre: "buzo de creeper" , precio: 6700},
-    {nombre: "buzo de  gintama" , precio: 4200 },
-    {nombre: "buzo de ricardo Milos" , precio: 4900},
-    {nombre: "buzo de rubius" , precio: 5200},
+    {nombre: "galletitas" , precio: 6700},
+    {nombre: "cerveza" , precio: 4200 },
+    {nombre: "manteca" , precio: 4900},
+    {nombre: "azucar" , precio: 5200},
     {nombre: "buzo de vegetta777" , precio: 5300},
 ];
-let carrito = [ ]
-let seleccion = prompt("Hola ¿desea realizar una compra? si o no.")
+let carrito = []
+let seleccion = prompt("Hola ¿desea comprar algo? si o no.")
 
 while(seleccion.toLocaleLowerCase() != "si" && seleccion.toLocaleLowerCase() != "no"){
     alert("Por favor ingrese si o no")
@@ -26,7 +25,7 @@ while(seleccion != "no"){
     let producto = prompt("agrega un producto a tu carrito")
     let precio = 0
     
-    if(producto == "Buzo de Nezuko" || producto == "Buzo de Creeper" || producto == "Buzo de  Gintama" || producto == "Buzo de Ricardo Milos" || producto == "Buzo de Rubius" || producto == "Buzo de Vegetta777"){
+    if(producto == "buzo de nezuko" || producto == "buzo de creeper" || producto == "buzo de  gintama" || producto == "buzo de ricardo Milos" || producto == "buzo de rubius" || producto == "buzo de vegetta777"){
         switch(producto){
             case "buzo de nezuko":
                 precio = 5800 ;
@@ -37,7 +36,7 @@ while(seleccion != "no"){
             case "buzo de  gintama":
                 precio = 4200 ;
                 break;
-            case "buzo de ricardo milos":
+            case "buzo de ricardo Milos":
                 precio = 4900 ;
                 break;
             case "buzo de rubius":
